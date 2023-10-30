@@ -71,6 +71,7 @@ sp.source
       <pre>
       </pre>
       <small>https://smartpy.io/ide?template=upgradable_lambdas.py</small>
+      <small>https://tezos.stackexchange.com/questions/3340/what-are-good-examples-of-upgradable-smartpy-contracts-using-proxy-delegates-or</small>
     </td>
   </tr>
 
