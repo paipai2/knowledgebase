@@ -61,6 +61,20 @@ sp.source
   </tr>
 
   <tr>
+    <td>Upgradability</td>
+    <td>
+      <pre>
+      </pre>
+      <small>https://docs.openzeppelin.com/upgrades-plugins/1.x/writing-upgradeable</small>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small>https://smartpy.io/ide?template=upgradable_lambdas.py</small>
+    </td>
+  </tr>
+
+  <tr>
     <td></td>
     <td>
       <pre>
@@ -73,8 +87,33 @@ sp.source
     </td>
   </tr>
 
-  
-  <tr>
+   <tr>
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
+   <tr>
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
+   <tr>
     <td></td>
     <td>
       <pre>
