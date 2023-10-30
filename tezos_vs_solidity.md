@@ -23,6 +23,20 @@ struct Nft {
 Nft:type = sp.record(owner=sp.address, tokenid=sp.nat)
       </pre>
     </td>
-    
+  </tr>
+  <tr>
+    <td>Advance Block Time</td>
+    <td>
+      <pre>
+await advanceTimeAndBlock(86400 * 1);
+      </pre>
+    </td>
+    <td>
+      <pre>
+# within test module
+# https://smartpy.io/manual/scenarios/testing_contracts#calls-optional-arguments        
+scenario += c1.ep().run(now = sp.timestamp(100))
+      </pre>
+    </td>
   </tr>
 </table>
