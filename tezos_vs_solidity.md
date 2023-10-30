@@ -46,12 +46,12 @@ scenario += c1.ep().run(now = sp.timestamp(100))
     <td>msg.sender</td>
     <td>
       <pre>
-        msg.sender
+msg.sender
       </pre>
     </td>
     <td>
       <pre>
-        sp.source
+sp.source
       </pre>
     </td>
   </tr>
