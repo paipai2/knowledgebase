@@ -2,10 +2,14 @@
   <tr><th>Description</th><th>Solidity</th><th>Tezos</th></tr>
   <tr>
     <td>Blackhole Address</td>
-    <td>0x0000000000000000000000000000000000000000</td>
     <td>
       <pre>
-      tz1Ke2h7sDdakHJQh8WX4Z372du1KChsksyU
+0x0000000000000000000000000000000000000000
+      </pre>  
+    </td>
+    <td>
+      <pre>
+tz1Ke2h7sDdakHJQh8WX4Z372du1KChsksyU
       </pre>
       <small>https://forum.smartpy.io/t/zero-address-burn-address-null-address-in-tezos/97</small>
     </td>
