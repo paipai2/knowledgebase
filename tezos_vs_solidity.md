@@ -41,4 +41,45 @@ scenario += c1.ep().run(now = sp.timestamp(100))
       <small>https://smartpy.io/manual/scenarios/testing_contracts#calls-optional-arguments</small>
     </td>
   </tr>
+
+  <tr>
+    <td>msg.sender</td>
+    <td>
+      <pre>
+        msg.sender
+      </pre>
+    </td>
+    <td>
+      <pre>
+        sp.source
+      </pre>
+    </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
 </table>
