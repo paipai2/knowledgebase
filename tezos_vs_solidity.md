@@ -4,7 +4,9 @@
     <td>Blackhole Address</td>
     <td>0x0000000000000000000000000000000000000000</td>
     <td>
-      tz1Ke2h7sDdakHJQh8WX4Z372du1KChsksyU<br/>
+      <pre>
+      tz1Ke2h7sDdakHJQh8WX4Z372du1KChsksyU
+      </pre>
       <small>https://forum.smartpy.io/t/zero-address-burn-address-null-address-in-tezos/97</small>
     </td>
   </tr>
@@ -33,10 +35,10 @@ await advanceTimeAndBlock(86400 * 1);
     </td>
     <td>
       <pre>
-# within test module
-# https://smartpy.io/manual/scenarios/testing_contracts#calls-optional-arguments        
+# within test module        
 scenario += c1.ep().run(now = sp.timestamp(100))
       </pre>
+      <small>https://smartpy.io/manual/scenarios/testing_contracts#calls-optional-arguments</small>
     </td>
   </tr>
 </table>
