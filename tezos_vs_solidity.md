@@ -76,15 +76,34 @@ sp.source
   </tr>
 
   <tr>
-    <td></td>
+    <td>Get Balance Of Token</td>
     <td>
       <pre>
+uint256 bal;
+bal = IERC20Upgradeable(tokenAddress).balanceOf(targetAddress);
       </pre>
     </td>
     <td>
       <pre>
+# solution 1: sp.transfer with delay behaviour 
+contract = sp.contract(
+    balance_of_param,
+    fa2_address,
+    "balance_of"
+).unwrap_some(error="Fa2BalanceOfNotFound")
+param = sp.record(
+    callback=sp.self_entrypoint("_setter"),
+    requests=requests,
+)
+sp.transfer(param, sp.tez(0), contract)
+# solution 2: call FA2 contract with OnchainviewBalanceOf mixin, no delay
+contract = sp.contract(
+                balance_of_param,
+                fa2_address,
+                "get_balance_of"
+            ).unwrap_some(error="Fa2GetBalanceOfNotFound")
       </pre>
-      <small></small>
+      <small>https://forum.smartpy.io/t/obtaining-the-user-balance-of-a-deployed-fa2/25/2</small>
     </td>
   </tr>
 
