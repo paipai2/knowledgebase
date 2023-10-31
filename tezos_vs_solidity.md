@@ -122,19 +122,6 @@ contract = sp.contract(
   </tr>
 
    <tr>
-    <td></td>
-    <td>
-      <pre>
-      </pre>
-    </td>
-    <td>
-      <pre>
-      </pre>
-      <small></small>
-    </td>
-  </tr>
-
-   <tr>
     <td>Map</td>
     <td>
       <pre>
@@ -151,6 +138,19 @@ map_type: type = sp.big_map[sp.address, sp.bool]
 # assignment
 self.data.my_maps = sp.big_map({sp.address("tz1Ke2h7sDdakHJQh8WX4Z372du1KChsksyU"):True})
 sp.cast(self.data.my_maps, map_type)
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+  
+   <tr>
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
       </pre>
       <small></small>
     </td>
