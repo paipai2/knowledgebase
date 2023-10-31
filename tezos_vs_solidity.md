@@ -152,13 +152,21 @@ self.data.my_maps = sp.cast(sp.big_map({sp.address("tz1Ke2h7sDdakHJQh8WX4Z372du1
   
   <tr>
     <td>9</td> 
-    <td></td>
+    <td>Enum</td>
     <td>
       <pre>
+# declaration
+enum status{ PAUSED, PRESALE, SALE }
+# assignment
+status saleStatus = status.PAUSED;
       </pre>
     </td>
     <td>
       <pre>
+# declaration
+status:type = sp.variant(paused=sp.unit, presales=sp.unit, sale=sp.unit)        
+# assignment
+self.data.status = sp.cast(sp.variant.paused(()), status)
       </pre>
       <small></small>
     </td>
