@@ -135,13 +135,22 @@ contract = sp.contract(
   </tr>
 
    <tr>
-    <td></td>
+    <td>Map</td>
     <td>
       <pre>
+# declaration
+mapping(address => bool) public my_maps;
+# assignment
+my_maps[address("0x0000000000000000000000000000000000000000")] = true;
       </pre>
     </td>
     <td>
       <pre>
+# declaration
+map_type: type = sp.big_map[sp.address, sp.bool]
+# assignment
+self.data.my_maps = sp.big_map({sp.address("tz1Ke2h7sDdakHJQh8WX4Z372du1KChsksyU"):True})
+sp.cast(self.data.my_maps, map_type)
       </pre>
       <small></small>
     </td>
