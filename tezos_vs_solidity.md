@@ -55,6 +55,20 @@ msg.sender
     </td>
     <td>
       <pre>
+sp.sender
+      </pre>
+    </td>
+  </tr>
+
+  <tr>
+    <td>tx.origin</td>
+    <td>
+      <pre>
+tx.origin
+      </pre>
+    </td>
+    <td>
+      <pre>
 sp.source
       </pre>
     </td>
@@ -134,6 +148,45 @@ contract = sp.contract(
   </tr>
 
    <tr>
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
+  <tr>
     <td></td>
     <td>
       <pre>
