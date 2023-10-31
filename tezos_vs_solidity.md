@@ -1,6 +1,7 @@
 <table>
-  <tr><th>Description</th><th>Solidity</th><th>Tezos</th></tr>
+  <tr><th>No</th><th>Description</th><th>Solidity</th><th>Tezos</th></tr>
   <tr>
+    <td>1</td>
     <td>Blackhole Address</td>
     <td>
       <pre>
@@ -15,6 +16,7 @@ tz1Ke2h7sDdakHJQh8WX4Z372du1KChsksyU
     </td>
   </tr>
   <tr>
+    <td>2</td>
     <td>Struct Declaration</td>
     <td>
       <pre>
@@ -31,6 +33,7 @@ Nft:type = sp.record(owner=sp.address, tokenid=sp.nat)
     </td>
   </tr>
   <tr>
+    <td>3</td>
     <td>Advance Block Time</td>
     <td>
       <pre>
@@ -47,6 +50,7 @@ scenario += c1.ep().run(now = sp.timestamp(100))
   </tr>
 
   <tr>
+    <td>4</td>
     <td>msg.sender</td>
     <td>
       <pre>
@@ -61,6 +65,7 @@ sp.sender
   </tr>
 
   <tr>
+    <td>5</td>
     <td>tx.origin</td>
     <td>
       <pre>
@@ -75,6 +80,7 @@ sp.source
   </tr>
 
   <tr>
+    <td>6</td>
     <td>Upgradability</td>
     <td>
       <pre>
@@ -90,6 +96,7 @@ sp.source
   </tr>
 
   <tr>
+    <td>7</td>
     <td>Get Balance Of Token</td>
     <td>
       <pre>
@@ -122,6 +129,7 @@ contract = sp.contract(
   </tr>
 
    <tr>
+    <td>8</td>
     <td>Map</td>
     <td>
       <pre>
@@ -143,33 +151,22 @@ sp.cast(self.data.my_maps, map_type)
     </td>
   </tr>
   
+  <tr>
+    <td>9</td> 
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
    <tr>
-    <td></td>
-    <td>
-      <pre>
-      </pre>
-    </td>
-    <td>
-      <pre>
-      </pre>
-      <small></small>
-    </td>
-  </tr>
-
-   <tr>
-    <td></td>
-    <td>
-      <pre>
-      </pre>
-    </td>
-    <td>
-      <pre>
-      </pre>
-      <small></small>
-    </td>
-  </tr>
-
-  <tr>
+    <td>10</td> 
     <td></td>
     <td>
       <pre>
@@ -183,6 +180,7 @@ sp.cast(self.data.my_maps, map_type)
   </tr>
 
   <tr>
+    <td>11</td> 
     <td></td>
     <td>
       <pre>
@@ -196,6 +194,21 @@ sp.cast(self.data.my_maps, map_type)
   </tr>
 
   <tr>
+    <td>12</td> 
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
+  <tr>
+    <td>13</td> 
     <td></td>
     <td>
       <pre>
