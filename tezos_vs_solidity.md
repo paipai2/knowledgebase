@@ -117,8 +117,8 @@ param = sp.record(
     requests=requests,
 )
 sp.transfer(param, sp.tez(0), contract)
-# solution 2: call FA2 contract with OnchainviewBalanceOf mixin, no delay
-contract = sp.contract(
+# solution 2: call OnchainviewBalanceOf mixin of FA2 contract, no delay
+balance = sp.contract(
                 balance_of_param,
                 fa2_address,
                 "get_balance_of"
