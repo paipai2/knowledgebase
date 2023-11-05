@@ -174,13 +174,22 @@ self.data.status = sp.cast(sp.variant.paused(()), status)
 
    <tr>
     <td>10</td> 
-    <td></td>
+    <td>Internal Function</td>
     <td>
       <pre>
+        function myInternalFunc(address from, address to, uint256 value) internal {
+          ...
+        }
       </pre>
     </td>
     <td>
       <pre>
+        @sp.private(with_storage="read-write")
+        def myInternalFunc(self, from, to, value):
+          sp.cast(from, sp.address)
+          sp.cast(to, sp.address)
+          sp.cast(value,sp.nat)
+          ...
       </pre>
       <small></small>
     </td>
@@ -188,7 +197,7 @@ self.data.status = sp.cast(sp.variant.paused(()), status)
 
   <tr>
     <td>11</td> 
-    <td></td>
+    <td>Internal View Function</td>
     <td>
       <pre>
       </pre>
