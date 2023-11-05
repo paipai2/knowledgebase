@@ -126,7 +126,7 @@ balance = sp.view(
           ).unwrap_some(error="Invalid view")
       </pre>
       <small>1. https://forum.smartpy.io/t/obtaining-the-user-balance-of-a-deployed-fa2/25/2</small><br/>
-      <small>2. <a href="https://smartpy.io/ide?code=eJzdVMtuozAU3fMVFiusifiAjipNiJRdu2l3UYQsMMUS2MjXNMrfzzW@BFySme5GGi_ysM@559yHrfrBWMegF9YNVyaAwZAkv2DIe1OPnUxq2bBeKJ3xpyRhuKpOALCjVVLX@wyBB6OdFZVDAKPlSWWptHJlmYHsmh3rr6@ilyuMX8iuBLgsHO78f3BW6Q8ewzBCXgsn8gBkzxQuucG8Y6OrFp2Wn0peIisBPBn5YsBKN1q9EbhhtikX_33KS8Yv8h8nS262uGbqBSBwljidp_CdAnfCb1HXVgKcY6GodhLTug5GaRflhczQaUosSD1ILBxOyqT4KDNynA8jtETj3@wlUe81U2OR_lCFUOwz_xmRGmMpJlN6azFWuKkE5xjU@8vS0KB0rs@OZXzd33zUFyuGEgxOIef3JjB4Z_Ml@2sZnHGiOz6uBYXtpM42OfHwpmGPSiexTl77OW2UBcf8Rsqnh246o7BUVr9VQiW1sMpk_iUMyUwfYVRxL8erkh5atJxyYv_AE7qtwcR@xs5vZ1rYq9Bsrz_WJAIvImGjiNkFsqVmh9aYLblYO8yXgabQ8ajeQRQLYuXAFwTB8zSSag6tuRAPdqx1fYe4dzv6646zMLxNA@HJR9GBpJDrZoa4UXuj4OuTbyncsk@W8fr68zdw3__F">My Source Code</a></small>
+      <small>2. <a target="_blank" href="https://smartpy.io/ide?code=eJzdVMtuozAU3fMVFiusifiAjipNiJRdu2l3UYQsMMUS2MjXNMrfzzW@BFySme5GGi_ysM@559yHrfrBWMegF9YNVyaAwZAkv2DIe1OPnUxq2bBeKJ3xpyRhuKpOALCjVVLX@wyBB6OdFZVDAKPlSWWptHJlmYHsmh3rr6@ilyuMX8iuBLgsHO78f3BW6Q8ewzBCXgsn8gBkzxQuucG8Y6OrFp2Wn0peIisBPBn5YsBKN1q9EbhhtikX_33KS8Yv8h8nS262uGbqBSBwljidp_CdAnfCb1HXVgKcY6GodhLTug5GaRflhczQaUosSD1ILBxOyqT4KDNynA8jtETj3@wlUe81U2OR_lCFUOwz_xmRGmMpJlN6azFWuKkE5xjU@8vS0KB0rs@OZXzd33zUFyuGEgxOIef3JjB4Z_Ml@2sZnHGiOz6uBYXtpM42OfHwpmGPSiexTl77OW2UBcf8Rsqnh246o7BUVr9VQiW1sMpk_iUMyUwfYVRxL8erkh5atJxyYv_AE7qtwcR@xs5vZ1rYq9Bsrz_WJAIvImGjiNkFsqVmh9aYLblYO8yXgabQ8ajeQRQLYuXAFwTB8zSSag6tuRAPdqx1fYe4dzv6646zMLxNA@HJR9GBpJDrZoa4UXuj4OuTbyncsk@W8fr68zdw3__F">My code</a></small>
     </td>
   </tr>
 
