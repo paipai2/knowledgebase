@@ -188,7 +188,7 @@ self.data.status = sp.cast(sp.variant.paused(()), status)
         def myInternalFunc(self, from, to, value):
           sp.cast(from, sp.address)
           sp.cast(to, sp.address)
-          sp.cast(value,sp.nat)
+          sp.cast(value, sp.nat)
           ...
       </pre>
       <small></small>
@@ -200,10 +200,21 @@ self.data.status = sp.cast(sp.variant.paused(()), status)
     <td>Internal View Function</td>
     <td>
       <pre>
+        function myInternalFunc(uint256 tokenId) internal view returns(uint256) {
+          address owner;
+          ...
+          return owner
+        }
       </pre>
     </td>
     <td>
       <pre>
+        @sp.private(with_storage="read-only")
+        def myInternalFunc(self, tokenId):
+          sp.cast(tokenId, sp.nat)
+          owner = ...
+          ...
+          return sp.cast(owner, sp.address)
       </pre>
       <small></small>
     </td>
