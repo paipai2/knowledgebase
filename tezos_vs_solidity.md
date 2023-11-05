@@ -234,7 +234,7 @@ self.data.status = sp.cast(sp.variant.paused(()), status)
     </td>
     <td>
       <pre>
-        @sp.onchain_view()
+        @sp.onchain_view
         def myExternalFunc(self, tokenId):
           sp.cast(tokenId, sp.nat)
           owner = ...
