@@ -118,11 +118,12 @@ param = sp.record(
 )
 sp.transfer(param, sp.tez(0), contract)
 # solution 2: call OnchainviewBalanceOf mixin of FA2 contract, no delay
-balance = sp.contract(
-                balance_of_param,
-                fa2_address,
-                "get_balance_of"
-            ).unwrap_some(error="Fa2GetBalanceOfNotFound")
+balance = sp.view(
+            "get_balance_of",
+            fa2_address,
+            balance_of_param,
+            [balance_of_response],
+          ).unwrap_some(error="Invalid view")
       </pre>
       <small>https://forum.smartpy.io/t/obtaining-the-user-balance-of-a-deployed-fa2/25/2</small>
     </td>
