@@ -222,13 +222,24 @@ self.data.status = sp.cast(sp.variant.paused(()), status)
 
   <tr>
     <td>12</td> 
-    <td></td>
+    <td>External View Function</td>
     <td>
       <pre>
+        function myExternalFunc(uint256 tokenId) external view returns(uint256) {
+          address owner;
+          ...
+          return owner;
+        }
       </pre>
     </td>
     <td>
       <pre>
+        @sp.onchain_view()
+        def myExternalFunc(self, tokenId):
+          sp.cast(tokenId, sp.nat)
+          owner = ...
+          ...
+          return sp.cast(owner, sp.address)
       </pre>
       <small></small>
     </td>
