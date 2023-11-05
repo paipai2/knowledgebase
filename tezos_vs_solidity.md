@@ -179,19 +179,19 @@ self.data.status = sp.cast(sp.variant.paused(()), status)
     <td>Internal Function</td>
     <td>
       <pre>
-        function myInternalFunc(address from, address to, uint256 value) internal {
-          ...
-        }
+function myInternalFunc(address from, address to, uint256 value) internal {
+  ...
+}
       </pre>
     </td>
     <td>
       <pre>
-        @sp.private(with_storage="read-write")
-        def myInternalFunc(self, from, to, value):
-          sp.cast(from, sp.address)
-          sp.cast(to, sp.address)
-          sp.cast(value, sp.nat)
-          ...
+@sp.private(with_storage="read-write")
+def myInternalFunc(self, from, to, value):
+  sp.cast(from, sp.address)
+  sp.cast(to, sp.address)
+  sp.cast(value, sp.nat)
+...
       </pre>
       <small></small>
     </td>
@@ -202,21 +202,21 @@ self.data.status = sp.cast(sp.variant.paused(()), status)
     <td>Internal View Function</td>
     <td>
       <pre>
-        function myInternalFunc(uint256 tokenId) internal view returns(uint256) {
-          address owner;
-          ...
-          return owner;
-        }
+function myInternalFunc(uint256 tokenId) internal view returns(uint256) {
+  address owner;
+  ...
+  return owner;
+}
       </pre>
     </td>
     <td>
       <pre>
-        @sp.private(with_storage="read-only")
-        def myInternalFunc(self, tokenId):
-          sp.cast(tokenId, sp.nat)
-          owner = ...
-          ...
-          return sp.cast(owner, sp.address)
+@sp.private(with_storage="read-only")
+def myInternalFunc(self, tokenId):
+  sp.cast(tokenId, sp.nat)
+  owner = ...
+  ...
+  return sp.cast(owner, sp.address)
       </pre>
       <small></small>
     </td>
@@ -227,21 +227,21 @@ self.data.status = sp.cast(sp.variant.paused(()), status)
     <td>External View Function</td>
     <td>
       <pre>
-        function myExternalFunc(uint256 tokenId) external view returns(uint256) {
-          address owner;
-          ...
-          return owner;
-        }
+function myExternalFunc(uint256 tokenId) external view returns(uint256) {
+  address owner;
+  ...
+  return owner;
+}
       </pre>
     </td>
     <td>
       <pre>
-        @sp.onchain_view
-        def myExternalFunc(self, tokenId):
-          sp.cast(tokenId, sp.nat)
-          owner = ...
-          ...
-          return sp.cast(owner, sp.address)
+@sp.onchain_view
+def myExternalFunc(self, tokenId):
+  sp.cast(tokenId, sp.nat)
+  owner = ...
+  ...
+  return sp.cast(owner, sp.address)
       </pre>
       <small></small>
     </td>
