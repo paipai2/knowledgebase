@@ -203,7 +203,7 @@ self.data.status = sp.cast(sp.variant.paused(()), status)
         function myInternalFunc(uint256 tokenId) internal view returns(uint256) {
           address owner;
           ...
-          return owner
+          return owner;
         }
       </pre>
     </td>
@@ -236,6 +236,62 @@ self.data.status = sp.cast(sp.variant.paused(()), status)
 
   <tr>
     <td>13</td> 
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
+  <tr>
+    <td>14</td> 
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
+  <tr>
+    <td>15</td> 
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
+  <tr>
+    <td>16</td> 
+    <td></td>
+    <td>
+      <pre>
+      </pre>
+    </td>
+    <td>
+      <pre>
+      </pre>
+      <small></small>
+    </td>
+  </tr>
+
+  <tr>
+    <td>17</td> 
     <td></td>
     <td>
       <pre>
