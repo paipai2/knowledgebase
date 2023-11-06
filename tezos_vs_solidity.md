@@ -288,39 +288,36 @@ import smartpy as sp
 def main():
     OwnerSet:type = sp.record(oldOwner=sp.address, newOwner=sp.address)
     class Owner(sp.Contract):
+    
         def __init__(self, owner):
             sp.cast(owner, sp.address)
             self.data.owner = owner
             # cannot emit in constructor 
             # sp.emit(sp.cast(sp.record(oldOwner=sp.address(""), newOwner=owner), OwnerSet), tag="OwnerSet")
-
+            
         @sp.private(with_storage="read-only")
         def isOwner(self, sender):
             assert sender == self.data.owner, "Caller is not owner"
-
+            
         @sp.entrypoint
         def changeOwner(self, newOwner):
             self.isOwner(sp.sender)
             sp.cast(newOwner, sp.address)
             sp.emit(sp.cast(sp.record(oldOwner=self.data.owner, newOwner=newOwner), OwnerSet), tag="OwnerSet")
-            self.data.owner = newOwner
+            self.data.owner = newOwner 
             
         @sp.onchain_view()
         def getOwner(self):
             return self.data.owner
-
+            
 @sp.add_test(name="abc")                  
 def test():
-
     admin = sp.test_account("Administrator")
     alice = sp.test_account("Alice")
-    
     s = sp.test_scenario(main) 
     c = main.Owner(admin.address)
     s += c
-
     s.verify(c.getOwner() == admin.address)
-
     c.changeOwner(alice.address).run(sender=admin)
       </pre>
       <small></small>
