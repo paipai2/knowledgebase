@@ -410,3 +410,5 @@ systemctl restart nginx
 # you also can check the error here
 tail -f 20 /var/log/nginx/ssl_cannon_cdn.error.log*
 
+# make sure to turn on boot nginx
+systemctl enable nginx
