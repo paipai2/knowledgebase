@@ -45,7 +45,7 @@ PORT=8081 yarn start
 ```
 
 ---------------------------------------------------------------------------------------
-# so at website just type and see result with 8082 port
+# so at website just type and see result with 8081 port， 在网站可以看nodeJS跑的怎样。💾 
 ```
 http://34.87.68.208:8081
 ```
