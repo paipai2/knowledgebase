@@ -51,13 +51,9 @@ http://34.87.68.208:8081
 ```
 
 
-# troubleshooting if any error✅
-
-PORT=8082 yarn start face any error of screen, like 8082 port already on there, use below check the port
-[root@instance-4-fatt3 charity]# PORT=8081 yarn start
-
-# Below of this the ports have being use, show a error like below 8081 was use
+# troubleshooting if any error，就是当你开yarn start 出问题时好像下面那个这样✅
 ```
+[root@instance-4-fatt3 charity]# PORT=8081 yarn start
 yarn run v1.22.19
 $ next start
  ⨯ Failed to start server
@@ -81,13 +77,18 @@ error Command failed with exit code 1.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 
 ```
+# 就是代表那个port 8081 已经被占用了，所以我们要杀掉那个占用的port💪
 
+
+
+<h2>should have the port use at there, you can check the port use command netstat -tuln，首先检查那个port有占用没有✅</h2>
 
 ```
 netstat -tuln
 ```
-<h2>should have the port use at there, you can see at there✅</h2>
+<h2>可以看到那个8081以在用着</h2>
 
+```
 [root@instance-4-fatt3 charity]# netstat -tuln
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State      
@@ -96,7 +97,7 @@ tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN
 tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN     
 tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN     
 tcp        0      0 127.0.0.1:43300         0.0.0.0:*               LISTEN     
-tcp6       0      0 :::8082                 :::*                    LISTEN     
+tcp6       0      0 :::8081                 :::*                    LISTEN     
 tcp6       0      0 :::22                   :::*                    LISTEN     
 tcp6       0      0 ::1:25                  :::*                    LISTEN     
 udp        0      0 0.0.0.0:68              0.0.0.0:*                          
@@ -106,25 +107,26 @@ udp6       0      0 :::57997                :::*
 udp6       0      0 :::45937                :::*                               
 udp6       0      0 :::60195                :::*                               
 udp6       0      0 :::56952                :::*        
+```
 
-
-<h2>Then should use ps aux | grep yarn✅</h2>
+<h2>Then should use ps aux | grep yarn那么就查出那个线路被占用，用以下查出那个yarn在开着✅</h2>
 ```
 ps aux | grep yarn
 ```
 
-# can see the below yarn already running ✅
+# can see the below yarn already running ，可以看到31922在用着，我相信你的画面是其他的数字✅
+```
 [root@instance-4-fatt3 charity]# ps aux | grep yarn
 root     31922  0.0  0.5 918616 47216 pts/0    Sl+  12:10   0:00 node /usr/bin/yarn start
 root     32171  0.0  0.0 112808   968 pts/1    D+   12:40   0:00 grep --color=auto yarn
-
-# so just kill it the 31922 in the list ✅
+```
+# so just kill it the 31922 in the list，所以用kill -9 数字，把他杀掉 ✅
 
 ```
 kill -9 31922
 ```
 
-# so now you can run port 8080 smoothly no any error ✅
+# so now you can run port 8080 smoothly no any error，所以你刚刚杀掉了他，就可以走那个code然后没有问题了 ✅
 ```
 PORT=8081 yarn start
 ```
