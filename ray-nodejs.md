@@ -110,9 +110,9 @@ udp6       0      0 :::56952                :::*
 ```
 
 <h2>Then should use ps aux | grep yarn那么就查出那个线路被占用，用以下查出那个yarn在开着✅</h2>
-```
+
 ps aux | grep yarn
-```
+
 
 # can see the below yarn already running ，可以看到31922在用着，我相信你的画面是其他的数字✅
 ```
