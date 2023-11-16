@@ -27,7 +27,7 @@ cd ~
 ```
 ls
 ```
-# example go to fray folder
+# example go to ray folder
 
 ```
 cd ray
