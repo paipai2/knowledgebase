@@ -27,10 +27,10 @@ cd ~
 ```
 ls
 ```
-# example go to fray folder
+# example go to fatt folder
 
 ```
-cd ray
+cd fatt
 ```
 
 # BUILD: the application for change any setting
