@@ -126,7 +126,7 @@ root     32171  0.0  0.0 112808   968 pts/1    D+   12:40   0:00 grep --color=au
 kill -9 31922
 ```
 
-# so now you can run port 8080 smoothly no any error，所以你刚刚杀掉了他，就可以走那个code然后没有问题了 ✅
+# so now you can run port 8081 smoothly no any error，所以你刚刚杀掉了他，就可以走那个code然后没有问题了 ✅
 ```
 PORT=8081 yarn start
 ```
